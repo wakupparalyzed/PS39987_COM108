@@ -1,9 +1,8 @@
 #include<stdio.h>
 
-int main()
-{
+int main(){
 	printf("* * * * * * * * * * * * * * * * * * * *\n");
-	printf("* Hello, FPT POLYTECHNIC!              *\n");
+	printf("* Hello, FPT POLYTECHNIC!             *\n");
 	printf("* MSSV: PS39987                       *\n");
 	printf("* Ten: Thai                           *\n");
 	printf("* Toi Thich: Choi Game                *\n");
