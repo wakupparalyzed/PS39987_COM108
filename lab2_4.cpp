@@ -7,7 +7,7 @@ int main() {
 	scanf("%f", &hoa);
 	printf("Nhap diem ly: ");
 	scanf("%f", &ly);
-	printf("Diem trung binh: %.1f", (toan*3 + ly*2 + hoa)/6);
+	printf("Diem trung binh: %.1f", (toan * 3 + ly * 2 + hoa) / 6);
 	scanf("%s");
 	return 0;
 }
