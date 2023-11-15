@@ -13,7 +13,7 @@ int main() {
 	// xu ly tinh toan (re nhanh)
 	// ax2 + bx + c = 0
 	if(a==0) {
-		// phuong trinh b1: bx + c = 0
+		// phuong trinh b1: ax + b = 0
 		if(b==0) {
 			if(c==0) {
 				printf("Phuong trinh co vo so nghiem");
@@ -24,7 +24,7 @@ int main() {
 
 		}
 		else {
-			float x = -c/b;
+			float x = -b/a;
 			printf("Phuong trinh co nghiem la: %.1f\n", x);
 		}
 	}
