@@ -16,16 +16,16 @@ int main() {
 		// phuong trinh b1: bx + c = 0
 		if(b==0) {
 			if(c==0) {
-				printf("Phuong trinh b1 bai 3 co vo so nghiem");
+				printf("Phuong trinh co vo so nghiem");
 			}
 			else {
-				printf("Phuong trinh b1 bai 3 vo nghiem");
+				printf("Phuong trinh vo nghiem");
 			}
 
 		}
 		else {
 			float x = -c/b;
-			printf("Phuong trinh b1 bai 3 co nghiem la: %.1f\n", x);
+			printf("Phuong trinh co nghiem la: %.1f\n", x);
 		}
 	}
 		else {
