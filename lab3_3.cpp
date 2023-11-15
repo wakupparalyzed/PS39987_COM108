@@ -3,6 +3,7 @@
 #include <stdlib.h>
 int main() {
 	// khai bao bien
+	// phuong trinh bac 1 bx + c = 0
 	float a,b;
 	printf("Nhap a: ");
 	scanf("%f", &a);
