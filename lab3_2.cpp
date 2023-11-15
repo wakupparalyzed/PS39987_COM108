@@ -24,7 +24,7 @@ int main() {
 
 		}
 		else {
-			float x = -b/a;
+			float x = -c/b;
 			printf("Phuong trinh co nghiem la: %.1f\n", x);
 		}
 	}
