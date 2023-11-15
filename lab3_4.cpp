@@ -16,7 +16,7 @@ int main() {
 			printf("bai 2: xay dung truong trinh giai phuong trinh");
 			break;
 		case 3:
-			printf(" bai 3 :xay dung chuong trinh tinh tienf dien");
+			printf(" bai 3 :xay dung chuong trinh tinh tien dien");
 			break;
 		
 	}
