@@ -48,6 +48,5 @@ int main() {
 				printf("Phuong trinh b2 x2 la: %.1f");
 			}
 		}
-		scanf("%s");
 		return 0;
 	}
