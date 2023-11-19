@@ -2,14 +2,14 @@
 
 int main() {
 	
-//khai bao bien
+	//khai bao bien
 	int x;
 
-// input
+	// input
 	printf("Hay nhap so tu ban phim: ");	
 	scanf("%d",&x);
 
-//xu li tinh toan
+	//xu li tinh toan
 	int dem =0;
 	for (int i = 1 ;i<x;i++) {
     	if(i*i==x) {
@@ -19,7 +19,7 @@ int main() {
 	
 	}
 
-//output
+	//output
 	if(dem==0) {
 	printf("khong phai so chinh phuong");
 	} else {
