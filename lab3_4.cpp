@@ -10,7 +10,7 @@ int main() {
 	scanf("%d",&luaChon);
 	switch(luaChon) {
 		case 1:
-			printf("bai 1 xau dung chuong trinh hoc luc");
+			printf("bai 1 xay dung chuong trinh hoc luc");
 			break;
 		case 2:
 			printf("bai 2: xay dung truong trinh giai phuong trinh");
