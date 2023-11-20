@@ -81,7 +81,7 @@ int main() {
     	printf("* * * * * * * * * * * * * * * * * *\n");
         printf("* 1. Tinh trung binh cong         *\n");
         printf("* 2. Tim so nguyen to             *\n");
-        printf("* 3. Tim song chinh phuong        *\n");
+        printf("* 3. Tim so chinh phuong        *\n");
         printf("* 4. Thoat                        *\n");
         printf("* * * * * * * * * * * * * * * * * *\n\n");
         printf("Nhap lua chon cua ban: ");
