@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
+//Xây dựng hàm checkYear
 int checkNam(int nam) {
 	int check = 0;
 	if((nam % 400 == 0 || nam % 4 == 0) && (nam % 100 != 0)) {
