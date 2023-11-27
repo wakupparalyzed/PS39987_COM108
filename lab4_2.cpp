@@ -6,7 +6,7 @@ int main() {
 	
 	// input
 	printf("Hay nhap so tu ban phim: ");
-	scanf("%d, &x");
+	scanf("%d", &x);
 	
 	// xu ly tinh toan - nhap 7
 	int dem=0; // day la so nguyen to
