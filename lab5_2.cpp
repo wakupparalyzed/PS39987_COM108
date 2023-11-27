@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 //Xây dựng hàm checkYear
 int checkNam(int nam) {
