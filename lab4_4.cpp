@@ -9,8 +9,10 @@ void trungBinhCong() {
 
   printf("Nhap so tu nhien min: ");
   scanf("%d", &min);
+  printf("\n");
   printf("Nhap so tu nhien max: ");
   scanf("%d", &max);
+  printf("\n");
 
   int i = min;
 
@@ -18,6 +20,7 @@ void trungBinhCong() {
     if(i % 2==0) {
       tong +=i;
       printf("%d\n", tong);
+      printf("\n");
       bienDem++;
     } i++;
   }
@@ -32,6 +35,7 @@ void soNguyenTo() {
   // input
   printf("Hay nhap so tu ban phim: ");
   scanf("%d", &x);
+  printf("\n");
 
   // xu ly tinh toan - nhap 7
   int dem = 0; // day la so nguyen to
@@ -54,8 +58,9 @@ void soChinhPhuong() {
   int x;
 
   // input
-  printf("Hay nhap so tu ban phim: ");	
+  printf("Hay nhap so tu ban phim: ");
   scanf("%d", &x);
+  printf("\n");
 
   //xu li tinh toan
   int dem =0;
@@ -69,7 +74,7 @@ void soChinhPhuong() {
 
   //output
   if(dem==0) {
-  printf("khong phai so chinh phuong\n\n");
+  printf("Khong phai so chinh phuong\n\n");
   } else {
   printf("Day la so chinh phuong\n\n");
   }
