@@ -3,82 +3,82 @@
 #include<math.h>
 
 void trungBinhCong() {
-	int min, max;
-	int tong = 0;
-	int bienDem = 0;
-  
-	printf("Nhap so tu nhien min: ");
-	scanf("%d", &min);
-	printf("Nhap so tu nhien max: ");
-	scanf("%d", &max);
-  
-	int i = min;
-  
-	while(i <= max) {
-		if(i % 2==0) {
-			tong +=i;
-			printf("%d\n", tong);
-			bienDem++;
-		} i++;
-	}
-	int tbc = tong / bienDem;
-	printf("Trung binh tong cac so tu nhien chia het cho 2 tu min den max: %d\n\n", tbc);
+  int min, max;
+  int tong = 0;
+  int bienDem = 0;
+
+  printf("Nhap so tu nhien min: ");
+  scanf("%d", &min);
+  printf("Nhap so tu nhien max: ");
+  scanf("%d", &max);
+
+  int i = min;
+
+  while(i <= max) {
+    if(i % 2==0) {
+      tong +=i;
+      printf("%d\n", tong);
+      bienDem++;
+    } i++;
+  }
+  int tbc = tong / bienDem;
+  printf("Trung binh tong cac so tu nhien chia het cho 2 tu min den max: %d\n\n", tbc);
 }
 
 void soNguyenTo() {
-	// Khai bao bien
-	int x;
-	
-	// input
-	printf("Hay nhap so tu ban phim: ");
-	scanf("%d, &x");
-	
-	// xu ly tinh toan - nhap 7
-	int dem=0; // day la so nguyen to
-	for(int i=2; i<x; i++) {
-		if(x%i==0) {
-			dem++; // day la so nguyen to
-		}
-	}
-	
-	// output
-	if(dem==0) {
-		printf("Day la so nguyen to\n\n");
-	} else {
-		printf("Day khong phai la so nguyen to\n\n");
-	}
+  // Khai bao bien
+  int x;
+
+  // input
+  printf("Hay nhap so tu ban phim: ");
+  scanf("%d", &x);
+
+  // xu ly tinh toan - nhap 7
+  int dem = 0; // day la so nguyen to
+  for(int i = 2; i<x; i++) {
+    if(x%i==0) {
+      dem++; // day la so nguyen to
+    }
+  }
+
+  // output
+  if(dem == 0) {
+    printf("Day la so nguyen to\n\n");
+  } else {
+    printf("Day khong phai la so nguyen to\n\n");
+  }
 }
 
 void soChinhPhuong() {
-	//khai bao bien
-	int x;
+  //khai bao bien
+  int x;
 
-	// input
-	printf("Hay nhap so tu ban phim: ");	
-	scanf("%d", &x);
+  // input
+  printf("Hay nhap so tu ban phim: ");	
+  scanf("%d", &x);
 
-	//xu li tinh toan
-	int dem =0;
-	for (int i = 1 ;i<x;i++) {
-    	if(i*i==x) {
-    		dem++;
-			break;
-		}
-	
-	}
+  //xu li tinh toan
+  int dem =0;
+  for (int i = 1 ;i<x;i++) {
+      if(i*i==x) {
+        dem++;
+      break;
+    }
 
-	//output
-	if(dem==0) {
-	printf("khong phai so chinh phuong\n\n");
-	} else {
-	printf("Day la so chinh phuong\n\n");
-	}
+  }
+
+  //output
+  if(dem==0) {
+  printf("khong phai so chinh phuong\n\n");
+  } else {
+  printf("Day la so chinh phuong\n\n");
+  }
 }
 
 int main() {
     int luaChon;
     do {
-    	printf("* * * * * * * * * * * * * * * * * *\n");
+      printf("* * * * * * * * * * * * * * * * * *\n");
         printf("* 1. Tinh trung binh cong         *\n");
         printf("* 2. Tim so nguyen to             *\n");
         printf("* 3. Tim so chinh phuong          *\n");
