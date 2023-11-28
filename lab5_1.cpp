@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//Tạo hàm
+// Tao ham
 int max(int num1, int num2, int num3) {
 	int m;
 	m = num1;
@@ -11,7 +11,7 @@ int max(int num1, int num2, int num3) {
 	if(m < num3) {
 		m = num3;
 	}
-	//Cách giải để tìm ra số lớn nhất
+	// Cach giai de tim ra so lon nhat
 	return m;
 }
 
@@ -24,7 +24,7 @@ int main() {
 	printf("Nhap so thu ba: ");
 	scanf("%d", &so3);
 	
-	//Gọi hàm trong hàm main
+	// Goi ham trong main
 	int m = max(so1, so2, so3);
 	printf("So lon nhat trong ba so la: %d", m);
 	
