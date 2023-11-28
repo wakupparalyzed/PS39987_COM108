@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//Xây dựng hàm checkYear
+// Xay dung ham checkYear
 int checkNam(int nam) {
 	int check = 0;
 	if((nam % 400 == 0 || nam % 4 == 0) && (nam % 100 != 0)) {
