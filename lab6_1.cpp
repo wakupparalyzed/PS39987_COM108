@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main() {
+  // Khai bao bien
   int i, n;
   float tong, trungBinh;
   int dem = 0;
