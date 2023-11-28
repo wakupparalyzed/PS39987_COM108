@@ -12,6 +12,7 @@ void soNguyenTo() {
   // input
   printf("Hay nhap so tu ban phim: ");
   scanf("%d", &x);
+  printf("\n");
 
   // xu ly tinh toan - nhap 7
   int dem = 0; // day la so nguyen to
@@ -23,9 +24,9 @@ void soNguyenTo() {
 
   // output
   if (dem == 0) {
-    printf("Day la so nguyen to");
+    printf("Day la so nguyen to\n\n");
   } else {
-    printf("Day khong phai la so nguyen to");
+    printf("Day khong phai la so nguyen to\n\n");
   }
 }
 
@@ -51,13 +52,17 @@ void uocBoi() {
   // Nhap hai so nguyen
   printf("Nhap so thu nhat: ");
   scanf("%d", &num1);
+  printf("\n");
 
   printf("Nhap so thu hai: ");
   scanf("%d", &num2);
+  printf("\n");
 
   // Tim va in ra uoc boi
   printf("Uoc so chung cua %d va %d la: %d\n", num1, num2, findGCD(num1, num2));
+  printf("\n");
   printf("Boi so chung cua %d va %d la: %d\n", num1, num2, findLCM(num1, num2));
+  printf("\n");
 }
 
 void tinhTienDien() {
@@ -72,6 +77,7 @@ void tinhTienDien() {
   // input
   printf("Nhap so dien: ");
   scanf("%f", &soDien);
+  printf("\n");
   // xu ly tinh toan
   float tong = 0;
   if (soDien <= 50) {
@@ -89,7 +95,7 @@ void tinhTienDien() {
     tong = (50 * bac1) + (50 * bac2) + (100 * bac3) + (100 * bac4) +
            (100 * bac5) + ((soDien - 400) * bac6);
   }
-  printf("Tong so dien tieu thu la: %.0f", tong);
+  printf("Tong so dien tieu thu la: %.0f\n\n", tong);
 }
 
 // Ham tinh tai xiu
@@ -101,6 +107,7 @@ void taiXiu() {
     printf("Nhap cuoc cua ban (tai/xiu): ");
     char user_bet[10];
     scanf("%s", user_bet);
+    printf("\n");
 
     int dice_1 = roll_dice();
     int dice_2 = roll_dice();
@@ -110,20 +117,22 @@ void taiXiu() {
 
     printf("Xuc xac 1: %d\nXuc xac 2: %d\nXuc xac 3: %d\n", dice_1, dice_2,
            dice_3);
+    printf("\n");
     printf("Tong: %d\n", total);
+    printf("\n");
 
     if ((total >= 11 && strcmp(user_bet, "tai") == 0) ||
         (total <= 10 && strcmp(user_bet, "xiu") == 0)) {
-      printf("Chuc mung! Ban thang!\n");
+      printf("Chuc mung! Ban thang!\n\n");
     } else {
-      printf("Xin loi, ban thua!\n");
+      printf("Xin loi, ban thua!\n\n");
     }
 
     printf("Ban co muon choi tiep khong? (co/khong): ");
     char play_again[5];
     scanf("%s", play_again);
     if (strcmp(play_again, "khong") == 0) {
-      printf("Cam on ban da choi! Tam biet!\n");
+      printf("Cam on ban da choi! Tam biet!\n\n");
       break;
     }
   }
@@ -181,6 +190,6 @@ int main() {
     default:
       printf("Lua chon khong hop le. Vui long nhap lai.\n\n");
     }
-  } while (choose > 10);
+  } while (choose != 0);
   return 0;
 }
