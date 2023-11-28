@@ -1,33 +1,34 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
-  // Khai bao bien
   int i, n;
   float tong, trungBinh;
   int dem = 0;
-  
+
   printf("Nhap so phan tu mang: ");
   scanf("%d", &n);
   printf("\n");
-  
+
   int mang[n];
-  for(i = 0; i < n; i++) {
-    printf("Nhap phan tu thu %d: ", i+1);
+  for (i = 0; i < n; i++) {
+    printf("Nhap phan tu thu %d: ", i + 1);
     scanf("%d", &mang[i]);
   }
   printf("\n");
 
-  for(i = 0; i < n; i++) {
-    printf("Phan tu [%d] la %d\n", i+1, mang[i]);
+  for (i = 0; i < n; i++) {
+    printf("Phan tu [%d] la %d\n", i + 1, mang[i]);
   }
   printf("\n");
 
-  for(i = 0; i < n; i++) {
-    if(mang[i] % 3 == 0) {
+  for (i = 0; i < n; i++) {
+    if (mang[i] % 3 == 0) {
       tong += mang[i];
       dem++;
+      printf("So chia het cho 3 la: %d\n", mang[i]);
     }
   }
+  printf("\n");
   trungBinh = tong / dem;
   printf("Trung binh cong cua cac so chia het cho 3 la %.2f", trungBinh);
   return 0;
