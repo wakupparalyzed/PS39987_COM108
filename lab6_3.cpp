@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Xu ly du lieu
 void sapXep(int mang[], int n) {
   int i, j, temp;
   for (i = 0; i < n - 1; i++) {
