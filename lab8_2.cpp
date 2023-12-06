@@ -26,7 +26,7 @@ int main() {
     scanf("%f", &nhomSV[i].diemTB);
   }
 
-  //sort
+  // sort
   for (i = 0; i < n; i++) {
     for (j = i + 1; j < n; j++) {
       if (nhomSV[i].diemTB > nhomSV[j].diemTB) {
