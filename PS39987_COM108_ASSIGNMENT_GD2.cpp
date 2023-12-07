@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 void soNguyenTo() {
   // Khai bao bien
@@ -79,7 +80,7 @@ void tinhTienKaraoke() {
   if (gio_bat_dau < 12 || gio_bat_dau > 23 || gio_ket_thuc < 12 ||
       gio_ket_thuc > 23) {
     printf("Gio khong hop le. Quan Karaoke hoat dong tu 12h den 23h.\n");
-    return 1; // Ket thuc chuong trinh voi ma loi
+    return; // Ket thuc chuong trinh voi ma loi
   }
 
   // Tinh so gio su dung
