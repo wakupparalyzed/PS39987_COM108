@@ -326,40 +326,6 @@ void sapXepThongTinSV() {
   }
 }
 
-void tinhPhanSo() {
-  // Khai bao bien
-  int tuSo1, mauSo1, tuSo2, mauSo2;
-  int tuSoTong, mauSoTong, tuSoHieu, mauSoHieu, tuSoTich, mauSoTich, tuSoThuong,
-      mauSoThuong;
-
-  // Nhap 2 phan so
-  printf("Nhap phan so thu nhat: ");
-  scanf("%d/%d", &tuSo1, &mauSo1);
-  printf("Nhap phan so thu hai: ");
-  scanf("%d/%d", &tuSo2, &mauSo2);
-
-  // Tinh tong
-  tuSoTong = tuSo1 * mauSo2 + tuSo2 * mauSo1;
-  mauSoTong = mauSo1 * mauSo2;
-  // Tinh hieu
-  tuSoHieu = tuSo1 * mauSo2 - tuSo2 * mauSo1;
-  mauSoHieu = mauSo1 * mauSo2;
-  // Tinh tich
-  tuSoTich = tuSo1 * tuSo2;
-  mauSoTich = mauSo1 * mauSo2;
-  // Tinh thuong
-  tuSoThuong = tuSo1 * mauSo2;
-  mauSoThuong = mauSo1 * tuSo2;
-
-  // Ket qua
-  printf("\n");
-  printf("Tong: %d/%d\n", tuSoTong, mauSoTong);
-  printf("Hieu: %d/%d\n", tuSoHieu, mauSoHieu);
-  printf("Tich: %d/%d\n", tuSoTich, mauSoTich);
-  printf("Thuong: %d/%d\n", tuSoThuong, mauSoThuong);
-  printf("\n");
-}
-
 int main() {
   printf("1. Kiem tra so nguyen\n\n");
   printf("2. Tim uoc so chung va boi so chung cua hai so\n\n");
@@ -407,7 +373,7 @@ int main() {
       taiXiu();
       break;
     case 10:
-      tinhPhanSo();
+      printf("10. Chuong trinh dang bao tri !");
       break;
     default:
       printf("Lua chon khong hop le. Vui long nhap lai.\n\n");
