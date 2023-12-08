@@ -267,22 +267,42 @@ struct sinhVien {
   float diemTB;
 };
 
+void inXepLoaiHocLuc(struct sinhVien sv) {
+  if (sv.diemTB >= 9.0) {
+    printf("Hoc luc xuat sac\n");
+  } else if (sv.diemTB >= 8.0) {
+    printf("Hoc luc gioi\n");
+  } else if (sv.diemTB >= 6.5) {
+    printf("Hoc luc kha\n");
+  } else if (sv.diemTB >= 5.0) {
+    printf("Hoc luc trung binh\n");
+  } else {
+    printf("Hoc luc yeu\n");
+  }
+}
+
 void sapXepThongTinSV() {
   int i, j, n;
   printf("Nhap so luong sinh vien: ");
   scanf("%d", &n);
+  getchar();
+
   struct sinhVien nhomSV[n];
 
   for (i = 0; i < n; i++) {
     printf("\n");
     printf("Nhap ma sinh vien: ");
-    scanf("%s", nhomSV[i].mssv);
+    fflush(stdin);
+    gets(nhomSV[i].mssv);
     printf("Nhap ten sinh vien: ");
-    scanf("%s", nhomSV[i].tenSV);
+    fflush(stdin);
+    gets(nhomSV[i].tenSV);
     printf("Nhap nganh hoc: ");
-    scanf("%s", nhomSV[i].nganhHoc);
+    fflush(stdin);
+    gets(nhomSV[i].nganhHoc);
     printf("Nhap diem trung binh: ");
     scanf("%f", &nhomSV[i].diemTB);
+    getchar();
   }
 
   // sort
@@ -302,6 +322,7 @@ void sapXepThongTinSV() {
     printf("Ten sinh vien: %s\n", nhomSV[i].tenSV);
     printf("Nganh hoc: %s\n", nhomSV[i].nganhHoc);
     printf("Diem trung binh: %.2f\n", nhomSV[i].diemTB);
+    inXepLoaiHocLuc(nhomSV[i]);
   }
 }
 
